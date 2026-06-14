@@ -191,9 +191,7 @@ def add_model_results(selected):
         "phone_mass_kg": config.PHONE_MASS_KG,
         "modal_mass_factor": config.MODAL_MASS_FACTOR,
     }
-    nominal = cantilever_model(
-        thickness_m=config.NOMINAL_THICKNESS_M, **model_inputs
-    )
+    nominal = cantilever_model(thickness_m=config.NOMINAL_THICKNESS_M, **model_inputs)
     target_frequency = float(selected["frequency_fft_hz"].mean())
     calibrated_thickness = calibrate_thickness(target_frequency, model_inputs)
     calibrated = cantilever_model(thickness_m=calibrated_thickness, **model_inputs)
@@ -214,8 +212,7 @@ def add_model_results(selected):
     comparison_rows = []
     for _, row in selected.iterrows():
         processed = pd.read_csv(
-            config.PROCESSED_DIR
-            / f"{row['experiment']}_liberacion_seleccionada.csv"
+            config.PROCESSED_DIR / f"{row['experiment']}_liberacion_seleccionada.csv"
         )
         time = processed["time_s"].to_numpy()
         experimental = processed["filtered_acceleration_m_s2"].to_numpy()
@@ -302,11 +299,7 @@ def create_global_figures(selected):
 def main():
     """Ejecuta el flujo reproducible completo para cada ensayo configurado."""
     if not config.DATA_DIR.exists():
-        raise FileNotFoundError(
-            "No se encontró la carpeta de sensores: "
-            f"{config.DATA_DIR}. Define GONI_SENSOR_DATA_DIR si los datos "
-            "están almacenados fuera del repositorio."
-        )
+        raise FileNotFoundError("No se encontró la carpeta de sensores")
     ensure_output_directories()
     all_rows = []
     for code, experiment in config.EXPERIMENTS.items():
