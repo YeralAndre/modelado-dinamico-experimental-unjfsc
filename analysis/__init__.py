@@ -1,0 +1,2 @@
+"""Experimental vibration analysis package."""
+

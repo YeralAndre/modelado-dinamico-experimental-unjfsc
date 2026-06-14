@@ -1,0 +1,52 @@
+{
+  "selected_releases": [
+    {
+      "experiment": "E01_10mm",
+      "displacement_cm": 1.0,
+      "release": 3,
+      "frequency_peaks_hz": 7.235112907328045,
+      "frequency_fft_hz": 7.2455231417270785,
+      "damping_ratio": 0.0038456918081425013,
+      "sample_rate_hz": 57.88090325862436
+    },
+    {
+      "experiment": "E02_15mm",
+      "displacement_cm": 1.5,
+      "release": 1,
+      "frequency_peaks_hz": 7.23521514873624,
+      "frequency_fft_hz": 7.2456255302452135,
+      "damping_ratio": 0.004229062732414806,
+      "sample_rate_hz": 57.88172118988992
+    },
+    {
+      "experiment": "E03_20mm",
+      "displacement_cm": 2.0,
+      "release": 3,
+      "frequency_peaks_hz": 7.235215148733265,
+      "frequency_fft_hz": 7.245625530242234,
+      "damping_ratio": 0.0025505420831024466,
+      "sample_rate_hz": 57.88172118986612
+    },
+    {
+      "experiment": "E04_25mm",
+      "displacement_cm": 2.5,
+      "release": 1,
+      "frequency_peaks_hz": 7.235215148733265,
+      "frequency_fft_hz": 7.245625530242234,
+      "damping_ratio": 0.0034793579291631355,
+      "sample_rate_hz": 57.88172118986612
+    },
+    {
+      "experiment": "E05_30mm",
+      "displacement_cm": 3.0,
+      "release": 1,
+      "frequency_peaks_hz": 7.235010668818298,
+      "frequency_fft_hz": 7.245420756111562,
+      "damping_ratio": 0.004503967890715079,
+      "sample_rate_hz": 57.88008535054638
+    }
+  ],
+  "mean_fft_frequency_hz": 7.245564097713664,
+  "mean_peak_frequency_hz": 7.235153804469823,
+  "mean_damping_ratio": 0.0037217244887075935
+}
